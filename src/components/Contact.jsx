@@ -3,7 +3,7 @@
 
 function Contact() {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white" >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-black text-gray-800 mb-4">Say Hello!</h2>
@@ -12,7 +12,7 @@ function Contact() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Quick Info Column */}
-          <div className="space-y-8 bg-pink-50 p-8 rounded-2xl border border-pink-100/50">
+          <div className="space-y-8 bg-pink-50 p-8 rounded-2xl border border-pink-100/50" data-aos="fade-right">
             <div>
               <h3 className="font-bold text-xl text-gray-800 mb-2">📍 Visit the Parlor</h3>
               <p className="text-gray-600 font-medium">
@@ -59,6 +59,7 @@ function Contact() {
             </div>
             <button 
               type="submit" 
+              data-aos="zoom-in"
               className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold p-3 rounded-xl transition-colors shadow-md shadow-pink-100"
             >
               Send Message

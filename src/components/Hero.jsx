@@ -20,7 +20,7 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // 3000ms = 3 seconds
+    }, 2000); // 3000ms = 3 seconds
 
     return () => clearInterval(interval); // Clean up the timer on unmount
   }, [images.length]);
@@ -33,12 +33,12 @@ function Hero() {
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content (Stays constant) */}
-        <div className="space-y-6 text-center md:text-left">
+        <div className="space-y-6 text-center md:text-left" data-aos="fade-down">
           <span className="bg-pink-100 text-pink-600 text-sm font-semibold px-3 py-1 rounded-full">
             New Summer Flavors Out Now!
           </span>
           <h1 className="text-5xl md:text-6xl font-black text-gray-800 leading-tight">
-            Happiness is a scoop of <span className="text-pink-500">Pure Bliss</span>.
+            Happiness is a scoop of <span className="text-pink-500">Pure Bliss</span>
           </h1>
           <p className="text-gray-600 text-lg">
             Handcrafted with organic ingredients, love, and a sprinkle of magic. Discover the creamiest treats in town.

@@ -10,8 +10,20 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 
 import './App.css'
+import { useEffect } from "react";
+
+import AOS from "aos";
 
 function App() {
+    useEffect(() => {
+
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+
+    }, []);
+
   return (
     <div>
 

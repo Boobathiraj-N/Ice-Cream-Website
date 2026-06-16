@@ -34,7 +34,7 @@ function Products() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {flavors.map((flavor) => (
-            <div key={flavor.id} className={`rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group`}>
+            <div key={flavor.id} data-aos="flip-right" className={`rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group`}>
               <div className="overflow-hidden h-64 bg-gray-100">
                 <img 
                   src={flavor.img} 

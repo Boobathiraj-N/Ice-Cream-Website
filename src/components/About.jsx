@@ -4,7 +4,7 @@ function About() {
     <section id="about" className="py-20 bg-amber-50/50">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Image */}
-        <div className="relative">
+        <div className="relative"  data-aos="zoom-out">
           <img 
             src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=600&auto=format&fit=crop" 
             alt="Making ice cream" 
@@ -18,7 +18,7 @@ function About() {
 
         {/* Right Side Copy */}
         <div className="space-y-6">
-          <h2 className="text-4xl font-black text-gray-800">Crafting Joy Since 2018</h2>
+          <h2 className="text-4xl font-black text-gray-800" data-aos ="fade-left">Crafting Joy Since 2018</h2>
           <p className="text-gray-600 leading-relaxed">
             What started as a tiny kitchen experiment has blossomed into a neighborhood staple. We believe that ice cream isn't just a dessert—it's an experience that brings families, friends, and sweet tooths together.
           </p>
